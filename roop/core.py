@@ -174,7 +174,7 @@ def pre_check() -> bool:
     util.conditional_download(download_directory_path, ['https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/detection_Resnet50_Final.pth'])
     util.conditional_download(download_directory_path, ['https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth'])
     download_directory_path = util.resolve_relative_path('../models/CodeFormer/realesrgan')
-    util.conditional_download(download_directory_path, ['https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/RealESRGAN_x2plus.pth'])
+    util.conditional_download(download_directory_path, ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth'])
 
     if not shutil.which('ffmpeg'):
        update_status('ffmpeg is not installed.')
