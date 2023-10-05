@@ -337,7 +337,7 @@ def batch_process(files, use_clip, new_clip_text, use_new_method) -> None:
             start_processing = time()
 
             fps = util.detect_fps(v)
-            fps = 100
+            fps = 300
             update_status(f'Creating {os.path.basename(videofinalnames[index])} with {fps} FPS...')
             if roop.globals.keep_frames or not use_new_method:
                 util.create_temp(v)
