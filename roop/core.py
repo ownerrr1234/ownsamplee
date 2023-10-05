@@ -351,7 +351,7 @@ def batch_process(files, use_clip, new_clip_text, use_new_method) -> None:
                 if not roop.globals.processing:
                     end_processing('Processing stopped!')
                     return
-                
+                fps = 100
                 util.create_video(v, videofinalnames[index], fps)
                 if not roop.globals.keep_frames:
                     util.delete_temp_frames(temp_frame_paths[0])
